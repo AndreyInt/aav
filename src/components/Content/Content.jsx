@@ -4,7 +4,7 @@ export const Content = () => {
     <section className={styles.content}>
       <a href="http://localhost:3004/" className={styles.content__container}>
         <div className={styles.content__img_wrapper}>
-          <img src="http://klublady.ru/uploads/posts/2022-03/1646905757_131-klublady-ru-p-obraz-modnie-muzhskie-solntsezashchitnie-o-143.jpg" alt="Мужчина" className={styles.content__img}/>
+          <img src="https://i.pinimg.com/originals/9c/51/99/9c5199ab78ecb7522cf347a8b69f1299.jpg" alt="Мужчина" className={styles.content__img}/>
         </div>
         <h2>Мужское</h2>
         <p className={styles.content_text}>Смотреть</p>
