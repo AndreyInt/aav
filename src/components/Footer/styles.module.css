@@ -1,0 +1,11 @@
+.footer {
+  max-width: 1200px;
+  width: 90%;
+  border-top: solid 2px #5f5e5e;
+  height: 50px;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+}

@@ -1,0 +1,60 @@
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 3.33%;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto 50px;
+  justify-content: space-between;
+}
+
+.content__container {
+  color: white;
+  text-decoration: none;
+}
+
+@keyframes trambling-animation {
+  0%, 50%, 100% {
+      transform: rotate(0deg);
+  }
+  10%, 30% {
+      transform: rotate(-1deg);
+  }
+  20%, 40% {
+      transform: rotate(1deg);
+  }
+}
+
+.content__container:hover {
+  cursor: pointer;
+  animation: 1.2s ease-in-out 0s normal none 1 running trambling-animation;
+}
+
+.content__img {
+  width: 100%;
+  height: 520px;
+  border-radius: 5px;
+  pointer-events: none;
+}
+
+.content__img_wrapper {
+  transition: opacity 0.2s ease;
+}
+
+.content__img_wrapper:hover {
+  opacity: 0.8;
+}
+
+.content_text {
+  width: 66px;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;
+}
+
+.content_text:hover {
+  background-size: 100% 2px;
+}
