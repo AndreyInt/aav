@@ -1,0 +1,15 @@
+.menu {
+  position:absolute;
+  background-color: white;
+  top: 48px;
+  margin: -450px 0 0 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  opacity: 0;
+  transition: margin .8s;
+}
+
+.isMenuOpen {
+  margin-top: 0;
+}

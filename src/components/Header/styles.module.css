@@ -26,6 +26,7 @@
   flex-direction: row;
   justify-content:space-between;
   top:0;
+  position: relative;
   left:0;
 }
 
@@ -103,6 +104,3 @@
 .header__button:hover {
   opacity: 0.6;
 }
-
-
-
