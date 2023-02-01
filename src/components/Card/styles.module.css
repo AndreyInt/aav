@@ -6,31 +6,29 @@
   width: 90%;
   margin: 0 auto 50px;
   justify-content: space-between;
-  position: relative;
 }
 
-.card__front,
-.card__back {
+.content__container {
   color: white;
   text-decoration: none;
-  overflow: hidden;
-  backface-visibility: hidden;
-  position: absolute;
-  transition: transform .5s linear;
-  height: 592px;
-  width: 354px;
 }
 
-.card__front {
-  transform: perspective(800px) rotateY(0deg);
+@keyframes trambling-animation {
+  0%, 50%, 100% {
+      transform: rotate(0deg);
+  }
+  10%, 30% {
+      transform: rotate(-1deg);
+  }
+  20%, 40% {
+      transform: rotate(1deg);
+  }
 }
 
-.card__back {
-  transform: perspective(800px) rotateY(180deg);
-  background-color: rgb(131, 129, 129);
-  text-align: center;
+.content__container:hover {
+  cursor: pointer;
+  animation: 1.2s ease-in-out 0s normal none 1 running trambling-animation;
 }
-
 
 .content__img {
   width: 100%;
@@ -39,6 +37,13 @@
   pointer-events: none;
 }
 
+.content__img_wrapper {
+  transition: opacity 0.2s ease;
+}
+
+.content__img_wrapper:hover {
+  opacity: 0.8;
+}
 
 .content_text {
   width: 66px;
@@ -52,17 +57,4 @@
 
 .content_text:hover {
   background-size: 100% 2px;
-}
-
-.card {
-  height: 593px;
-  width: 355px;
-}
-
-.card:hover > .card__front {
-  transform: perspective(800px) rotateY(-180deg);
-}
-
-.card:hover > .card__back {
-  transform: perspective(800px) rotateY(0deg);
 }

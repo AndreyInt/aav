@@ -2,14 +2,20 @@
   position:absolute;
   background-color: white;
   top: 48px;
-  margin: -450px 0 0 0;
   left: 0;
   height: 500px;
   width: 100%;
+  transition: opacity .4s;
   opacity: 0;
-  transition: margin .8s;
+  pointer-events: none;
+  border-radius: 5px;
 }
 
 .isMenuOpen {
   margin-top: 0;
+  transition: opacity .4s;
+  display:block;
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 2;
 }
